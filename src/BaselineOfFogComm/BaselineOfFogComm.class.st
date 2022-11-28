@@ -10,7 +10,7 @@ BaselineOfFogComm >> baseline: spec [
 	spec
 		for: #common
 		do: [ spec blessing: #baseline.
-			spec baseline: 'TaskItShell' with: [ spec repository: 'github://sbragagnolo/taskit' ].
+			spec baseline: 'TaskIt' with: [ spec repository: 'github://pharo-contributions/taskit:v1.2.0' ].
 			spec
 				project: 'NeoJSON'
 				with: [ spec
@@ -21,6 +21,6 @@ BaselineOfFogComm >> baseline: spec [
 			spec baseline: 'Equals' with: [ spec repository: 'github://bouraqadi/PharoMisc' ].
 			spec baseline: 'ParametrizedTests' with: [ spec repository: 'github://tesonep/ParametrizedTests' ].
 			spec baseline: 'Pragmatic' with: [ spec repository: 'github://sbragagnolo/Pragmatic' ].
-			spec package: #FogComm with: [ spec requires: #('TaskItShell' 'Pragmatic' 'Equals' 'Hexadecimal') ].
+			spec package: #FogComm with: [ spec requires: #('TaskIt' 'Pragmatic' 'Equals' 'Hexadecimal') ].
 			spec package: #FogCommTests with: [ spec requires: #('FogComm' 'ParametrizedTests') ] ]
 ]
